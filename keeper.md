@@ -7,12 +7,11 @@ Have you ever run a command that you thought was cool? Did you want to keep it f
 None. Using standard POSIX components.
 
 ## How to Setup
-In your shell's config (`~/.bashrc` for Bash and ~/.zshrc for ZShell) add this line:
+In your shell's config (`~/.bashrc` for Bash and ~/.zshrc for ZShell) add this line:  
+`alias keeper='echo $(history -p !!) >>~/.keeper.txt'`  
 
-`alias keeper='echo $(history -p !!) >>~/.keeper.txt'`
-
-Then run this command to access the new alias right away:
-`source .bashrc`
+Then run this command to access the new alias right away:  
+`source .bashrc`  
 (I'm assuming you're using Bash in this example... swap for .zshrc if you're ZShell)
 
 ## How to Use
